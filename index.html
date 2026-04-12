@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evgeny Spiridonov</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer  ></script>
+</head>
+<body>
+
+      <div class="container header-container">
+    <a href="#home" class="logo">EVGENIY<span>.</span></a>
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#home" class="active-section">Главная</a>
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#testimonials">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1><span>Персональный тренер</span> Евгений Спиридонов</h1>
+      <p>Преобрази свое тело и мышление. Индивидуальные программы, профессиональное сопровождение, результат уже через 4 тренировки.</p>
+      <div>
+        <a href="#contact" class="btn">Записаться</a>
+        <a href="#services" class="btn btn-outline">Программы</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- О тренере -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title"><span>Обо</span> мне</h2>
+      <div class="about-grid">
+        
+        <div class="about-text">
+          <h3>Привет, я Евгений </h3>
+          <p>Сертифицированный персональный тренер с 12 летним стажем. Специализируюсь на функциональном тренинге, коррекции фигуры и наборе массы. Более 1800 довольных клиентов достигли своих целей под моим руководством.</p>
+          <p>Моя философия — тренировки без травм , без ума но судовольствием. Я не просто даю упражнения, а учу понимать свое тело и выстраивать здоровые привычки на всю жизнь.</p>
+          <div class="stats">
+            <div class="stat-item">
+              <div class="stat-number">12</div>
+              <div class="stat-label">лет опыта</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1870+</div>
+              <div class="stat-label">клиентов</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">11</div>
+              <div class="stat-label">сертификатов</div>
+        <button class="open-btn" onclick="openModal()">посмотреть</button>                                                  
+    <div id="modal" class="modal" onclick="closeModalOnClick(event)">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div>
+                 <div class="rom">
+     <div class="slider-section">
+        <!-- горизонтальный слайдер (карусель с прокруткой) -->
+        <div class="horizontal-slider">
+            <div class="cards-wrapper">
+                <!-- карточка 1 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/2-2 (1).jpg" alt="" loading="lazy">
+                    </div>
+             
+                </div>
+
+                <!-- карточка 2 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/sertifikat (1).jpg" alt="" loading="lazy">
+                    </div>
+                  
+                </div>
+
+                <!-- карточка 3 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="" loading="lazy">
+                    </div>
+                   
+                </div>
+
+                <!-- карточка 4 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="" loading="lazy">
+                    </div>
+                  
+                </div>
+
+                <!-- карточка 5 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="" loading="lazy">
+                    </div>
+                   
+                </div>
+
+                <!-- карточка 6 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="" loading="lazy">
+                    </div>
+              
+                </div>
+
+                <!-- карточка 7 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="" loading="lazy">
+                    </div>
+            
+                </div>
+
+                <!-- карточка 8 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="" loading="lazy">
+                    </div>
+                 
+                </div>
+            </div>
+          </div>
+    </div>
+</div>
+                </div>
+               
+            </div>
+            
+            <div class="modal-footer">
+                <button class="modal-btn secondary" onclick="closeModal()">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title"><span>Мои</span> услуги</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-dumbbell"></i></div>
+          <h3>Персональная тренировка</h3>
+          <p>Индивидуальная программа с учетом ваших целей и особенностей. Постановка техники, контроль прогресса.</p>
+          <div class="price">4000руб<small>/ занятие</small></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-users"></i></div>
+          <h3>Сплит-тренировка (2 чел)</h3>
+          <p>Тренируйтесь вдвоем с другом или партнером. Экономия и командный дух, при этом внимание каждому.</p>
+          <div class="price">7000руб <small>/ пара</small></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-laptop"></i></div>
+          <h3>Онлайн-ведение</h3>
+          <p>Персональный план питания и тренировок, еженедельные созвоны и корректировки. Для занятых людей.</p>
+          <div class="price">2000руб<small>/ месяц</small></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-apple-alt"></i></div>
+          <h3>Консультация по питанию</h3>
+        <p>Разбор рациона,  Научу питаться силой тайги и силой гор.</p>
+          <div class="price">2000руб <small>/ разовая</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section id="testimonials">
+    <div class="container">
+      <h2 class="section-title"><span>Отзывы</span> клиентов</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            <i class="fas fa-quote-left" style="color: var(--primary); opacity: 0.6; margin-right: 5px;"></i>
+            За 3 месяца с Евгением я сбросил 12 кг и впервые увидел кубики пресса. Тренировки интересные, всегда с хорошим настроением. Рекомендую!
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">MV</div>
+            <div class="client-details">
+              <h4>MAX.V</h4>
+              <p>32 года, предприниматель</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            <i class="fas fa-quote-left" style="color: var(--primary); opacity: 0.6; margin-right: 5px;"></i>
+            Лучший тренер! Подход не шаблонный, постоянно корректирует программу. Почувствовала себя сильной и уверенной. Огромное спасибо.
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">ЕК</div>
+            <div class="client-details">
+              <h4>Елена К.</h4>
+              <p>28 лет, дизайнер</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            <i class="fas fa-quote-left" style="color: var(--primary); opacity: 0.6; margin-right: 5px;"></i>
+            Онлайн-ведение превзошло ожидания. Все четко, всегда на связи. Результат есть, хотя я в другом городе. Евгений — профессионал.
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">OM</div>
+            <div class="client-details">
+              <h4>Ортлиб М.</h4>
+              <p>15 лет, IT-специалист</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title"><span>Связаться</span> со мной</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Готов начать?</h3>
+          <p style="margin-bottom: 30px; color: var(--text-muted);">Оставьте заявку, и я свяжусь с вами для бесплатной консультации. Обсудим цели и подберем формат.</p>
+          <div class="contact-detail">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <p style="font-weight: 600;">+7 (928)-818-94-68</p>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Ежедневно 18:00–19:30</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <p style="font-weight: 600;">mike.549382663@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <p style="font-weight: 600;">Фитнес-клуб "MSfit"</p>
+              <p style="color: var(--text-muted);">пр. 22 Партсъезда, 139, Минеральные Воды, Ставропольский край, 357207</p>
+            </div>
+          </div>
+          <div class="social-links" style="margin-top: 30px; text-align: left;">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Ваши цели, пожелания, вопросы..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn"><a class="https://max.ru/u/f9LHodD0cOLmgPNtm_yEhd0fAfGJkT-CdKATnsE8xO8oKp1Tz7x15XcF1zA">Отправить</a></button>
+             
+            <div id="form-message"><button class="simm" ><a class="limsd" href="https://max.ru/u/f9LHodD0cOLmgPNtm_yEhd0fAfGJkT-CdKATnsE8xO8oKp1Tz7x15XcF1zA" >Связь со мной</a></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-telegram-plane"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="copyright">
+      © 2026 Евгений Спиридонов. Все права кем-то защищены.
+    </div>
+    <button class="Makarov"><a class="Makarav" href="https://github.com/Mike635306">GITHAB-разработчика </a>   </button>
+  </div>
+</footer>
+
+
+</body>
+</html>
